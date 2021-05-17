@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+
+int listCnt = boardService.getListCnt(pagingVO); 		// 총 게시글 수
+		int cntPerPage = 10;									// 페이지 당 게시글 수
+		int blockRange = 10;									// 블럭 당 페이지 수
+		int pageCnt = (int) Math.ceil(listCnt / cntPerPage);	// 총 페이지 수 (게시글 수 / 페이지 당 게시글 수 의 올림값)
+		int curPage = 1;										// 현재 페이지 기본값 1
+		int curBlock = 1;										// 현재 블럭 기본값 1
+		int startPage = ((curBlock - 1) * blockRange) + 1;		// 시작 페이지
+		int endPage = (startPage + blockRange) - 1;				// 끝 페이지
+		
+
+		alert('listCnt');
+		alert('pageCnt');
+		alert('startPage');
+		alert('endPage');
+  </script>
+ </head>
+ <body>
+
+ </body>
+</html>
